@@ -15,7 +15,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_VERSION-desktop-full 
   - sudo apt-get install -y python3-pip python3-setuptools
-  - chown -R $USER:$USER /usr/local/lib/python3.6 
+  - sudo chown -R $USER:$USER /usr/local/lib/python3.6 
   - mkdir -p /usr/local/lib/python3.6/site-packages
 install:
   - source /opt/ros/$ROS_VERSION/setup.bash
