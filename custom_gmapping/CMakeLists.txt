@@ -7,7 +7,7 @@ find_package(Boost REQUIRED)
 
 include_directories(${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 
-include_directories(src)
+include_directories(src srv)
 
 add_service_files(
   FILES
