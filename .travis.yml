@@ -32,6 +32,7 @@ install:
   - cd ros_rl_for_slam
   - git clone https://github.com/ros-perception/openslam_gmapping.git
   - rosdep install custom_gmapping simulate_robot_rl simulation_map
+  - pip3 install wheel
   - pip3 install matplotlib==3.3.3 tensorflow gym==0.17.3 numpy==1.18.5 keras-rl2==1.0.4 rospkg==1.2.9
   - pip3 install --upgrade tensorflow==2.3.1
 script:
