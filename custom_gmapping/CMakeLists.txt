@@ -19,8 +19,11 @@ generate_messages(
 
 catkin_package()
 
+
+
 add_executable(custom_gmapping src/slam_gmapping.cpp src/main.cpp)
 target_link_libraries(custom_gmapping ${Boost_LIBRARIES} ${catkin_LIBRARIES})
+add_dependencies(custom_gmapping custom_gmapping_generate_messages_cpp)
 if(catkin_EXPORTED_TARGETS)
   add_dependencies(custom_gmapping ${catkin_EXPORTED_TARGETS})
 endif()
